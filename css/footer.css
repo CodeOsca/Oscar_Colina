@@ -1,0 +1,24 @@
+.fLSMpu {
+    color: var(--light-slate);
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    line-height: 1;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.fLSMpu a {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: var(--transition);
+}
+
+.fLSMpu a:hover,
+.fLSMpu a:focus{
+    color: var(--green);
+}

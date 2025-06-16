@@ -1,0 +1,177 @@
+.containerCenter{
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--lightest-slate);
+    font-size: var(--fz-xxl);
+}
+
+.archive-link {
+    font-family: var(--font-mono);
+    font-size: var(--fz-sm);
+    color: var(--green);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+
+.archive-link::after{
+    content: "";
+    display: block;
+    height: 1.5px;
+    background-color: var(--green);
+    width: 0;
+    transition: width 0.3s;
+}
+
+.archive-link:hover::after{
+    width: 100%;
+}
+
+.cardItem{
+    background-color: var(--light-navy);
+    border-radius: 17px;
+}
+
+.projectInner{
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    padding: 2rem 1.90rem;
+}
+
+.projectTop{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 6;
+}
+
+.project-links{
+    display: flex;
+    justify-content: space-around;
+    width: 65px;
+}
+
+.lisCard{
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    background-image: url(../images/descargar.svg);
+    background-repeat: repeat-y;
+}
+
+.project-title{
+    margin-top: 0;
+}
+
+.feather.feather-folder {
+    width: 40px;
+    height: 40px;
+}
+
+svg.feather {
+    fill: none;
+}
+
+.folder {
+    color: var(--green);
+}
+
+.project-links a {
+    display: flex;
+    height: 25px;
+    margin-top: -4px;
+    color: inherit;
+}
+
+.project-links svg{
+    height: inherit;
+}
+
+h3, h4{
+    color: var(--lightest-slate);
+    font-size: var(--fz-xxl);
+}
+
+.project-description p{
+    color: var(--light-slate);
+    font-size: 17px;
+    margin: 0;
+}
+
+.project-tech-list {
+    list-style: none;
+    margin-left: 0;
+    display: flex;
+    padding-left: 0;
+    padding-top: 20px;
+}
+
+.projectItemFooter{
+    margin-left: 15px;
+}
+
+.myworks{
+    position: relative;
+}
+
+.view-message.active-modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #020c1b9c;
+}
+
+.closeX{
+    opacity: 0;
+}
+
+.closeX.active-modal{
+    position: absolute;
+    top: 17%;
+    right: 17%;
+    z-index: 2;
+    font-size: var(--fz-xxl);
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--tw-ring-offset-color);
+    opacity: 1;
+}
+
+.view-warning{
+    background-color: var(--light-navy);
+    padding: 30px;
+    border-radius: 20px;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 15%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 4rem;
+}
+
+.view-warning.active-modal{
+    visibility: visible;
+    opacity: 1;
+}
+
+.view-warning.active-modal h3{
+    text-align: center;
+}
+
+@media (max-width: 1080px) {
+    .lisCard{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
