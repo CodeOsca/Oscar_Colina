@@ -107,7 +107,7 @@ nav.hideNav {
     }
 
 
-    .Start, .about, .skills, .contact {
+    .Start, .about, .skills, .contact, .myworks {
         font-size: clamp(var(--fz-sm), 4vw, var(--fz-lg));
         padding: 3px 20px 20px;
     }
