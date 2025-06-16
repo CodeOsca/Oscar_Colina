@@ -72,12 +72,12 @@ nav.hideNav {
     }
 
     main{
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     section{
-        padding-left: 15px;
+        padding-left: 0;
     }
 
      .listLinkMenu{

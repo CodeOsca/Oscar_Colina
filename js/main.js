@@ -5,17 +5,17 @@ const dataWords = [
     linkGithub: "https://github.com/CodeOsca/crud-products",
     linkToViewTry:"https://codeosca.github.io/crud-products/index.html",
     title:"Crud Products",
-    description:"A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-    listTecnology:["Next.js", "Chart.js", "GitHub API"]
+    description:"A small application of products where you can register them, to put prices, images and descriptions, a basic but functional CRUD.",
+    listTecnology:["Express", "Pug", "LocalStorage"]
   },
 
   {
     id:"2",
     linkGithub: "https://github.com/CodeOsca/Existencias",
     linkToViewTry:"https://codeosca.github.io/Existencias/",
-    title:"Inventario de Existencias",
-    description:"A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-    listTecnology:["Express", "Mongo", "GitHub pages"]
+    title:"Existences",
+    description:"A mini inventory that allows to register existences of a product with their available units, authentification, record of dates, entrances and exits of units, animations in each section of the sections and an interface with good user experience",
+    listTecnology:["Express", "Mongo", "Pug"]
   },
 ]
 
@@ -121,7 +121,6 @@ function viewToggleModal() {
 }
 
   ngAfterViewInit()    
-  particlesJS.load('particles-js', '/js/particlesjs-config.json');
   renderCards()
 
 document.addEventListener("click", function(e){
@@ -153,4 +152,111 @@ document.querySelector('.link-view-svg').addEventListener('click', e =>{
       setUrlTheWordClicked(e.target.id);
       viewToggleModal();
   }
+})
+
+
+particlesJS({
+  "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 800
+      }
+    },
+    "color": {
+      "value": "#0f46ff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 6,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false,
+        "mode": "repulse"
+      },
+      "onclick": {
+        "enable": false,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 400,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
 })
