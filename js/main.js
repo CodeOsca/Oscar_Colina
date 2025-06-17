@@ -5,7 +5,7 @@ const dataWords = [
     linkGithub: "https://github.com/CodeOsca/crud-products",
     linkToViewTry:"https://codeosca.github.io/crud-products/index.html",
     title:"Crud Products",
-    description:"A small application of products where you can register them, to put prices, images and descriptions, a basic but functional CRUD.",
+    description:'A small application of products where you can register them, to put prices, images and descriptions, a basic but functional CRUD.”',
     listTecnology:["Express", "Pug", "LocalStorage"]
   },
 
@@ -14,8 +14,17 @@ const dataWords = [
     linkGithub: "https://github.com/CodeOsca/Existencias",
     linkToViewTry:"https://codeosca.github.io/Existencias/",
     title:"Existences",
-    description:"A mini inventory that allows to register existences of a product with their available units, authentification, record of dates, entrances and exits of units, animations in each section of the sections and an interface with good user experience",
+    description:'A mini inventory that allows to register existences of a product with their available units, authentification, record of dates, entrances and exits of units, animations in each section of the sections and an interface with good user experience”',
     listTecnology:["Express", "Mongo", "Pug"]
+  },
+
+  {
+    id:"3",
+    linkGithub: "https://github.com/CodeOsca/FunaloMartinez",
+    linkToViewTry:"https://codeosca.github.io/FunaloMartinez/",
+    title:"FulanoMartinez",
+    description:'I siege static web of So-and-so Martínez, created to show their business model to their potential clients and to increase their popularity”',
+    listTecnology:["Bootstrap", "font-icons"]
   },
 ]
 
